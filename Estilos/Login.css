@@ -1,0 +1,398 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('fonts/segoe-ui.ttf') format('truetype');
+}
+
+:root {
+  --AzulTrello: #0c66e4;
+  --GrisClaro: #DEDEDE;
+  --OscuroTrello: #455570;
+  --Purpura: #8A2C75;
+}
+
+* {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+}
+
+body{
+  margin:0;
+}
+
+
+.Osmos{
+    text-align: center;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 80px;
+    color: var(--OscuroTrello);
+    font-weight: bold;
+  }
+  .image{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://wallpaperaccess.com/download/4k-minimalist-99815");
+    padding-top: 100px;
+  }
+  
+  .contenedor{
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 1px solid var(--GrisClaro);
+    background-color: white;
+    padding-bottom: 30px;
+  }
+
+  form{
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  
+  .LOG{
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--GrisClaro);
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .LOGO{
+    font-weight: bold;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--GrisClaro);
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .BUT{
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: var(--AzulTrello);
+    color: white;
+    font-weight: bold;
+  }
+  
+  .BotEdit{
+    border-radius: 5px;
+    padding: 5px;
+    border-width: 0px;
+    background-color: var(--AzulTrello);
+    color: white;
+  }
+
+  .invitado{
+    text-align: right;
+    margin-top: 20px;
+  }
+
+
+.header {
+    position: fixed;
+    background-color: var(--AzulTrello);
+    height: 35px;
+    border-width: 0px;
+    display: flex;
+    padding: 1px 1px 3px 2px;
+    width: 100%;
+    z-index: 1;
+}
+
+.boton{
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 5px 50%;
+    background-color: var(--AzulTrello);
+    color: white;
+    height: 34px;
+    border-width: 0px;
+    padding-left:30px;
+    text-align: left;
+    padding-right: 5px;
+    padding-left: 30px;
+    line-height: 35px;   
+    margin-top: 1px;
+    font-weight: bold;
+  }
+ 
+ .boton:hover
+  {
+  background-color: gray;
+  color: var(--TrelloOscuro);
+  opacity: 0.3;
+  }
+
+
+.Texto{
+  background-color: var(--AzulTrello);
+  color: white;
+  height: 34px;
+  border-width: 0px;
+  background-image: url("https://icons8.com/icon/132/search");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 5px 50%;
+  padding-left:30px;
+  text-align: left;
+  padding-right: 5px;
+  padding-left: 5px;
+  line-height: 35px;   
+  margin-top: 1px;
+  }
+
+  #atras{
+    margin-left: 3px;
+    background-image: url("../Recursos/atras.svg");
+  }
+
+  #Cerrar{
+    background-image: url("../Recursos/user.svg");
+    margin-left: auto; 
+    margin-right: 2px;
+    line-height: 30px;
+  }
+  
+  .headText{
+  background-color: var(--AzulTrello);
+  color: white;
+  margin-right: 2px;
+  height: 35px;
+  border: 0px solid #000;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+  text-align: left;
+  padding-left:25px;
+  line-height: 35px;   
+  border-radius: 5px;
+  }
+
+.buscar{
+    position:absolute;
+    margin-left: 33%;
+    background-image: url("../Recursos/search.svg");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 5px 50%;
+    border-width: 0px;
+    width: 25%;
+    min-width:25%;
+    height: 30px;
+    max-height:35px;
+    background-color: white;
+    margin-top:2px;
+    padding-left: 30px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+.apps{
+    display: flex;
+    vertical-align: bottom;
+    font-weight: bold;
+    margin-right: 30%;
+    margin-left: 40%;
+    text-align: center;
+}
+
+#catalogo{
+    font-weight: bold;
+    margin-top: 300px;
+    background-image: url("../Recursos/puzzle.svg");
+    background-color: var(--Purpura);
+    background-size: 50px 50px;
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-width: 0px;
+    border-radius: 5px;
+    display: block;
+    line-height: 190px;
+    color:var(--Purpura);
+    margin-right: 50px;
+}
+
+#catalogo:hover{
+    opacity: 0.7;
+}
+
+#Almacen{
+    font-weight: bold;
+    margin-top: 300px;
+    text-align: center;
+    background-image: url("../Recursos/Almacen.svg");
+    background-color: var(--OscuroTrello);
+    background-size: 50px 50px;
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-width: 0px;
+    border-radius: 5px;
+    display: block;
+    line-height: 190px;
+    color:var(--OscuroTrello);
+    margin-right: 50px;
+}
+
+#Almacen:hover{
+    opacity: 0.7;
+}
+
+.Articulos{
+  padding-top: 50px;  
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(420px, 435px));
+  justify-content: center;
+}
+
+.Item{
+  margin-left: 3px;
+  margin-bottom: 3px;
+  width: 430px;
+  height: 166px;
+  /*background-color: #DEDEDE;*/
+  border-radius: 5px;
+  display: absolute;
+}
+
+.Item:hover{
+  opacity: 0.7;
+}
+
+.Foto{
+  background-image: url("../DB/Fotos/LVS08205.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
+  grid-row: 1/3;
+  margin:8px;
+  background-color: #172B4D;
+}
+
+.Articulo{
+  font-size: 20px;
+  width: 250px;
+  position: relative;
+  top: -156px;
+  left:170px;
+  padding: 1px 0;
+  font-weight: bold;
+}
+
+.Descripcion{
+  font-size: 15px;
+  width: 250px;
+  height: 50px;
+  position: relative;
+  top: -152px;
+  left: 170px;
+  padding: 1px 0;
+}
+
+.Precio{
+  font-size: 15px;
+  width: 250px;
+  position: relative;
+  top: -160px;
+  left: 170px;
+  padding: 1px 0;
+}
+
+.Etiquetas{
+  font-size: 15px;
+  width: 250px;
+  height: 40px;
+  position: relative;
+  top: -155px;
+  left: 170px;
+  padding: 1px 0;
+  
+}
+
+.Stock{
+  font-size: 15px;
+  width: 250px;
+  position: relative;
+  top: -153px;
+  left: 170px;
+  padding: 1px 0;
+}
+
+.Etiq{
+  height: 20px;
+  background-color: #25B700;
+  border-radius: 10px;
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  color: var(--color-GrisClaro);
+}
+
+.Etiq2{
+  height: 20px;
+  background-color: var(--color-Envolventes);
+  border-radius: 10px;
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  color: var(--color-GrisClaro);
+}
+
+.FichaArticulo{
+  position: absolute;
+  left:20%;
+  right:20%;
+  align-content: center;
+  margin-top: 100px;
+  padding: 40px;
+  display: grid;
+  border: 1px solid var(--GrisClaro);
+  border-radius: 10px;
+
+}
+
+#Name{
+  color: var(--OscuroTrello);
+}
+
+.contenedorImagen{
+  margin-top: 20px;
+  border: 1px solid var(--GrisClaro);
+  width: 250px;
+  height: 250px;
+}
+
+table{
+  color: var(--OscuroTrello);
+  text-align: left;
+  position: absolute;
+  left: 3%;
+  right: 3%;
+  top: 80px;
+  width: 94%;
+  border-spacing: 0px;
+}
+
+th, td{
+  border: 1px solid var(--GrisClaro); border-width: 0px 0px 1px 0px;
+  height: 35px;
+  padding-right: 20px;
+}

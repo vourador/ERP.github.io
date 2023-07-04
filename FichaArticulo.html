@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="/Estilos/Login.css"></head>
+<div class="header">
+    <button onclick="history.back()" id="atras" class="boton" href="Index.html"></button>
+    <button onclick="location.href = 'Index.html'" id="Cerrar" class="boton" href="Index.html">Pepito Lago</button>
+  </div>
+<body>
+    <div class="FichaArticulo">
+      <label id="Name">Artículo:</label>
+      <input class="LOGO" type="text" name="PropArticulo" required>
+      <label id="Name">Descripción:</label>
+      <input class="LOGO" type="text" name="PropDescripcion" required>
+      <label id="Name">Categoría:</label>
+      <input class="LOGO" type="text" name="PropCategoria" required>
+      <label id="Name">Claves:</label>
+      <input class="LOGO" type="text" name="PropCategoria" required>
+      <label id="Name">Ubicación en almacén:</label>
+      <select name="select" class="LOGO">
+        <option value="value1">Estantería 1</option>
+        <option value="value2" selected>Balda 23</option>
+        <option value="value3">Cuarto 2</option>
+      </select>
+      <label id="Name">Imagen:</label>
+      <div class="contenedorImagen"></div>
+      <button class="BUT" type="submit" title="Guardar" name="Guardar">Guardar</button>
+    </div>
+</body>
+</html>
